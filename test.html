@@ -17,10 +17,11 @@
 </head>
 
 <body>
-    <model-viewer src="./assets/models/test_2.glb" ar ar-scale="fixed" camera-controls touch-action="pan-y"
-        alt="A 3D model of an astronaut" shadow-intensity="2" skybox-height="2m" orientation="90deg 0 0"
-        max-camera-orbit="0 75deg auto" ios-src="./assets/models/Police_car.usdz" xr-environment>
-
+    <model-viewer src="./assets/models/test_2.glb" ar ar-scale="fixed" shadow-intensity="0.5" exposure="0.8"
+        camera-controls touch-action="pan-y" alt="A 3D model of an astronaut" shadow-intensity="2" skybox-height="2m"
+        scale="0.1 0.1 0.1" orientation="90deg 0 0" max-camera-orbit="0 75deg auto"
+        ios-src="./assets/models/Police_car.usdz" ar-modes="webxr scene-viewer quick-look" xr-environment
+        environment-image="neutral">
         <button slot="ar-button" style="display: none;">View in your space</button>
     </model-viewer>
     <script>
