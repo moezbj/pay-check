@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <style>
+        model-viewer {
+            width: 80%;
+            height: 500px;
+            margin: 20px auto;
+            /* Center the model viewer */
+        }
+    </style>
+</head>
+
+<body>
+    <model-viewer src="./assets/models/test_1.glb" ar ar-scale="fixed" camera-controls touch-action="pan-x"
+        alt="A 3D model of an astronaut" shadow-intensity="2" skybox-height="2m" orientation="90deg 0 0"
+        max-camera-orbit="0 75deg auto" ios-src="./assets/models/Police_car.usdz" xr-environment>
+
+        <button slot="ar-button" style="display: none;">View in your space</button>
+    </model-viewer>
+    <script>
+        const modelViewer = document.querySelector('model-viewer');
+
+        modelViewer.addEventListener('load', () => {
+            if (modelViewer.hasAttribute('ar')) {
+                modelViewer.activateAR();
+            }
+        });
+
+    </script>
+</body>
+
+</html>
