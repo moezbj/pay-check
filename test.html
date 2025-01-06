@@ -17,19 +17,18 @@
 </head>
 
 <body>
-    <model-viewer src="./assets/models/untitled_2.glb"
-    ios-src="./assets/models/untitled_2.usdz"
+    <model-viewer src="./assets/models/small.glb"
+    ios-src="./assets/models/small.usdz"
     alt="A 3D model of a paycheck"
         ar
         ar-modes="webxr scene-viewer quick-look"
-        ar-scale="0.1 0.1 0.1"
-       
+        ar-scale="0.1"
         camera-controls
         touch-action="pan-x"
         shadow-intensity="0.5"
         exposure="0.8"
-        camera-orbit="0deg 90deg 1m"
-        field-of-view="120deg"
+        orientation="90deg 0 0"
+        camera-orbit="0deg 0deg 10m"
         camera-target="0m 10m 0m"
         >
         <button slot="ar-button" style="display: none;">View in your space</button>
