@@ -4,25 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pay-check</title>
     <style>
+        body {
+            margin: 0
+        }
+
         .container {
             background-image: url("./assets/img/bg.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             display: flex;
-            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo_container {
+            margin-top: 120px;
+        }
+
+        button {
+            background-color: aliceblue;
+            color: cornflowerblue;
+            height: 50px;
+            width: 120px;
+            border-radius: 12px;
+            margin-top: 20px;
+            border: none
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div>
-            <img src="./assets/img/ex.jpg" width="120px" height="auto" />
+        <div class="logo_container">
+            <img src="./assets/img/ex.jpg" width="200px" height="auto" />
         </div>
-        <button type="button" >Open</button>
+        <a href="./test.html">
+            <button type="button">Open</button>
+        </a>
     </div>
 
 </body>
